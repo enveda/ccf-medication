@@ -1,0 +1,52 @@
+[tool.poetry]
+name = "ccf_medication"
+version = "0.0.1"
+description = "Code to replicate the CCF medication analyses"
+authors = [
+    "TJ Hart",
+    "Antonio J Preto",
+    "Kiana West",
+    "Daniel Domingo-Fernandéz",
+]
+readme = "README.md"
+packages = [{ include = "ccf_medication" }]
+exclude = []
+
+[tool.poetry.dependencies]
+python = "~3.10"
+scikit-learn = "^1.3.0"
+tqdm = "^4.66.1"
+reportlab = "^4.0.5"
+requests = "^2.32.4"
+nbformat = "^5.9.2"
+plotly = "^5.17.0"
+pyensembl = "^2.2.9"
+pydeseq2 = "0.4.12"
+ruff = "^0.5"
+matplotlib = "3.7.3"
+contrastive = "^1.2.0"
+openpyxl = "^3.1.5"
+adjusttext = "^1.3.0"
+tabulate = "^0.9.0"
+nbconvert = "^7.16.6"
+matplotlib-venn = "^1.1.1"
+itables = "^2.2.5"
+ipykernel = "^6.29.5"
+supervenn = "^0.5.0"
+xlrd = "^2.0.2"
+venn = "^0.1.3"
+inmoose = "^0.7.8"
+statsmodels = "^0.14.5"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.3.1"
+black = "^24.3.0"
+ipykernel = "^6.25.2"
+pytest = "^7.4.2"
+pytest-cov = "^4.1.0"
+syrupy = "^4.5.0"
+lazydocs = "^0.4.8"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
